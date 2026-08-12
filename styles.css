@@ -307,9 +307,12 @@ h3 {
 
 .project-featured {
   min-height: 490px;
-  grid-row: span 2;
   background: var(--green-deep);
   color: var(--white);
+}
+
+.project-studio {
+  min-height: 490px;
 }
 
 .project-number {
@@ -390,6 +393,53 @@ h3 {
   border-top: 1px solid var(--line);
   color: var(--ink-muted);
   font-size: 0.9rem;
+}
+
+.service-list {
+  display: grid;
+  margin-top: 30px;
+  border-top: 1px solid var(--line);
+}
+
+.service-list article {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-list h4,
+.service-list p {
+  margin: 0;
+}
+
+.service-list h4 {
+  margin-bottom: 4px;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.service-list p {
+  color: var(--ink-muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.service-index {
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 0.78rem;
+}
+
+.service-status {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--green-soft);
+  color: var(--green-deep);
+  font-size: 0.68rem;
+  font-weight: 800;
 }
 
 .text-link {
