@@ -315,6 +315,76 @@ h3 {
   min-height: 490px;
 }
 
+.project-factory {
+  grid-column: 1 / -1;
+  min-height: 430px;
+  background:
+    linear-gradient(135deg, rgba(215, 230, 217, 0.58), transparent 58%),
+    var(--card);
+}
+
+.factory-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 72px;
+  align-items: end;
+  min-height: 360px;
+}
+
+.factory-intro .project-meta {
+  margin-bottom: 54px;
+}
+
+.factory-intro .eyebrow {
+  margin-bottom: 14px;
+}
+
+.factory-intro > p:not(.eyebrow) {
+  max-width: 520px;
+}
+
+.factory-intro .text-link {
+  margin-top: 22px;
+}
+
+.factory-capabilities {
+  display: grid;
+}
+
+.factory-capabilities article {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 16px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.factory-capabilities article:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.factory-capabilities span {
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 0.78rem;
+}
+
+.factory-capabilities h4,
+.factory-capabilities p {
+  margin: 0;
+}
+
+.factory-capabilities h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.factory-capabilities p {
+  color: var(--ink-muted);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
 .project-number {
   position: absolute;
   top: 16px;
@@ -594,9 +664,14 @@ footer strong {
   }
 
   .project-grid,
+  .factory-layout,
   .philosophy-layout,
   .about {
     grid-template-columns: 1fr;
+  }
+
+  .factory-layout {
+    gap: 42px;
   }
 
   .project-featured {
@@ -658,6 +733,10 @@ footer strong {
     padding: 26px;
   }
 
+  .factory-intro .project-meta {
+    margin-bottom: 52px;
+  }
+
   .project-meta {
     margin-bottom: 52px;
   }
@@ -716,6 +795,12 @@ footer strong {
   .project-featured,
   .contact {
     background: #20372c;
+  }
+
+  .project-factory {
+    background:
+      linear-gradient(135deg, rgba(72, 105, 85, 0.3), transparent 58%),
+      var(--card);
   }
 
   .button-secondary {
